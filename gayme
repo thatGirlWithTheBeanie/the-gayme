@@ -248,7 +248,7 @@ if count > 20:
         print()
         print("with credit to Jamie")
         print()
-        print("and credit to G.Booth")
+        print("and credit to Grae")
         print()
         time.sleep(1)
         print("^_^")
