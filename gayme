@@ -1,7 +1,7 @@
 import time
 import random
 
-count = ("0")
+count = 0
 
 
 #### ----------- TRADE FROM PLAYER 1 -----------------
@@ -9,7 +9,7 @@ def tradep1():
     print(player1n + ": who do will you trade away?")
     tradea = input()
     if tradea not in player1:
-        print("i'm sorry they are not im your deck")
+        print("i'm sorry they are not in your deck")
         return
     else:
 
@@ -26,8 +26,10 @@ def tradep1():
     print(player2n + " do you accept?")
     acceptt = input()
     if acceptt == "yes":
-        player1.append(tradea)
+        player1.insert(0,tradeb)
         player2.remove(tradeb)
+        player2.insert(0,tradea)
+        player1.remove(tradea)
         time.sleep(1)
         print("trade complete!")
         time.sleep(1)
@@ -62,7 +64,7 @@ def tradep2():
     print(player2n + ": who do will you trade away?")
     tradea = input()
     if tradea not in player2:
-        print("i'm sorry they are not im your deck")
+        print("i'm sorry they are not in your deck")
         return
     else:
         
@@ -76,11 +78,13 @@ def tradep2():
         print()
         print()
 
-print(player1n + " do you accept?")
+    print(player1n + " do you accept?")
     acceptt = input()
     if acceptt == "yes":
-        player2.append(tradea)
+        player2.insert(0,tradea)
         player1.remove(tradeb)
+        player1.insert(0,tradea)
+        player2.remove(tradea)
         time.sleep(1)
         print("trade complete!")
         time.sleep(1)
@@ -119,7 +123,7 @@ time.sleep(2)
 print()
 print("would you like to read the rules?")
 rulesq = input()
-if rulesq == "yes"
+if rulesq == "yes":
     time.sleep(1)
     print()
     print()
@@ -131,7 +135,7 @@ if rulesq == "yes"
     print()
     time.sleep(1)
     print()
-    print("e.g Kesha for " #######################################################
+    print("e.g Kesha for Michelle obama")
 
 ### player 1
 print ("who is going to be team Rainbow?")
@@ -195,7 +199,7 @@ print()
 print()
    
 
-while(count < 20)
+while count < 20:
 ### first swap start
     print("who will go?")
     print (player1n + " or " + player2n)
@@ -227,7 +231,7 @@ if count > 20:
     print("-------------------")
     print(*player1, sep="\n")
     time.sleep(2)
-    print("Team Breader")
+    print("Team Breeder")
     print("-------------------")
     print(*player2, sep="\n")
     time.sleep(2)
@@ -243,13 +247,10 @@ if count > 20:
         print()
         print()
         print()
-        print("Game Designers:"
+        print("Game Designers:")
         print("Adrianna DiLonardo and Sarah Rotella")
         print()
-        print("with credit to Jamie")
+        print("with credit to Jamie ^_^")
         print()
-        print("and credit to Grae")
-        print()
-        time.sleep(1)
-        print("^_^")
+        print("and credit to grae")
 
