@@ -3,13 +3,34 @@ import random
 
 count = 20
 
-### define teams --- long live ellen!----
-player1 = [["ellen", 10], ["adrianna dilonardo", 9], ["sarah rotella", 9], ["ellen page", 7], ["xena", 10], ["cosima", 5], ["willow", 2], ["santana", 2], ["ruby rose", 7], ["natasha negovanlis", 5], ["rose dix", 3], ["kristen stewart", 8], ["portia de rossi", 4], ["gaby dunn", 4]]
+### yes i know i'm shitty at annotations....
 
-
-player2 = [["laura prepon", 7], ["anna kendrick", 7], ["beyonce", 11], ["buffy", 4], ["evelyne brochu", 5], ["elise bauman", 5], ["tatiana maslany", 8], ["hayley atwell", 5], ["gillian anderson", 2], ["lucy lawless", 2], ["jenifer lawrence", 3], ["angelina jolie", 8], ["scarlett johansson", 8], ["rita volk", 4]]
-
-
+#def who1():
+#  firstgo = input ("")
+#  if firstgo == player1n:
+#      time.sleep(1)
+#      tradep1()
+#  if firstgo == player2n:
+#      time.sleep(1)
+#      tradep2()
+#  if firstgo != player1
+#      who1()
+ 
+ 
+ ###  ---------------------------------------------------------
+#### ================== FINISH THIS BIT!!!!!!!!!!!!!!!! ====================      
+#def who1():
+ # firstgo = input ("")
+  #while True:
+   # if firstgo == player1n or player2n:
+    #  if firstgo == player1n:
+       # tradep1()
+      #if firstgo == player2n:
+     ##   time.sleep(1)
+        #time.sleep(1)
+        #tradep2()
+    #else:
+     # who1()
 
 #### ----------- TRADE FROM PLAYER 1 -----------------
 def tradep1():
@@ -21,7 +42,7 @@ def tradep1():
         print("i'm sorry they are not in your deck")
         return
     else:
-        
+
         time.sleep(1)
         print("")
         print(player1n + ": for which straight girl?")
@@ -33,7 +54,7 @@ def tradep1():
         print("")
         print("")
 
-print(player2n + " do you accept?")
+    print(player2n + " do you accept?")
     acceptt = input("")
     if acceptt == "yes":
         player1.insert(0,tradeb)
@@ -90,7 +111,7 @@ def tradep2():
         time.sleep(1)
         print("")
         print("")
-    
+
     print(player1n + " do you accept?")
     acceptt = input("")
     if acceptt == "yes":
@@ -126,7 +147,9 @@ def tradep2():
 #### ---------END OF TRADE PLAYER 2 ----------------------
 
 
-
+### define teams --- long live ellen!----
+player1 = ["ellen", "adrianna dilonardo", "sarah rotella", "ellen page", "xena", "cosima", "willow", "santana", "ruby rose", "natasha negovanlis", "rose dix", "kristen stewart", "portia de rossi", "gaby dunn"]
+player2 = ["laura prepon", "anna kendrick", "beyonce", "buffy", "evelyne brochu", "elise bauman", "tatiana maslany", "hayley atwell", "gillian anderson", "lucy lawless", "jenifer lawrence", "angelina jolie", "scarlett johansson", "rita volk"]
 print ("")
 print ("")
 print ("")
@@ -156,16 +179,24 @@ if rulesq == "yes":
     print("")
     time.sleep(1)
     print("")
-    print("e.g Kesha for Michelle obama")
+    print("E.g. buffy for ellen page")
     print("")
+    print("")
+    time.sleep(1)
+    print("there will be 20 questions")
+    print("")
+    print("")
+    print("")
+    time.sleep(1)
+    print("good luck!")
 
 ### player 1
 print ("who is going to be team Rainbow?")
 player1n = input ("")
 
-if player1n == "adrianna":
+if player1n == "sam":
     time.sleep(2)
-    print ("ok seriously age, go to the bar and get a girl")
+    print ("OMG BEST NAME EVER!!!!")
     time.sleep(1)
 
 print("")
@@ -173,9 +204,9 @@ print("")
 print ("who is going to be team black and white?")
 player2n = input ("")
 
-if player2n == "adrianna":
+if player2n == "sam":
     time.sleep(2)
-    print ("you really need to stop obssesing Age, its not healthy")
+    print ("Now you have an awesome name!")
     time.sleep(1)
 
 
@@ -219,19 +250,13 @@ print("")
 print("")
 print("")
 print("")
-
+   
 
 while count in range(1, 21):
-    ### first swap start
+### first swap start
     print("who will go?")
     print (player1n + " or " + player2n)
-    firstgo = input ("")
-    if firstgo == player1n:
-        time.sleep(1)
-        tradep1()
-    if firstgo == player2n:
-        time.sleep(1)
-        tradep2()
+    who1()
     print("")
     print("")
     print("")
@@ -273,18 +298,17 @@ if 0 >= count:
         print("")
         print("")
         print("")
+        print("Gayme created by:")
         print("")
-        print("Game Designers:")
+        print("")
+        time.sleep(1)
+        print("Sam Booth")
         print("")
         print("")
         time.sleep(1)
-        print("Adrianna DiLonardo and Sarah Rotella")
+        print("follow me on tumblr")
         print("")
-        time.sleep(1)
-        print("with credit to Jamie")
-        print("")
-        time.sleep(1)
-        print("and created by Sam")
+        print("https://iputthesaminsalmonella.tumblr.com/")
     else:
         print ("good bye ^_^")
-
+        
